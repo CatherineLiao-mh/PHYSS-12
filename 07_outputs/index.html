@@ -25,9 +25,132 @@
 
 <h3>Week 7: Electronic Outputs</h3>
 
-
-
 <h4>Assignment: Minimum Viable Product for Final Project</h4>
+
+
+
+
+
+
+<h4><b><u> Structure Explained </b></h4></u>
+
+<p class = "margin"></p>
+
+I made a microphone sensor input and a touch sensor with led light output last assignment. This time I connected the ESP32 with the MEMS SPH0645 and three led light strips, each with 10 lights.
+
+<p class = "margin"></p>
+
+The MEMS microphone acts as a sensor that outputs different pitches and sound of it's environment while the led light has lights that light up one by one based on the output from MEMS.
+
+<p class = "margin"></p>
+
+There are three light strips one representing bass, one representing mid, and the last representing high.
+
+<p class = "margin"></p>
+
+
+
+
+
+
+<h4><b><u> Wiring </b></h4></u>
+
+<p class = "margin"></p>
+
+<img style = "width: 40%"
+ src = "wiring.jpg">
+
+<p class = "margin"></p>
+
+I did some research to understand the structure of an MEMS microphone. I found out what specific voltages and pins that has to be used in order for the project to work properly. 
+
+<p class = "margin"></p>
+
+SEL --> GND (I2S mode & common ground)
+<br>LRCL --> GPIO 26</br>
+DOUT --> GPIO 32
+<br>BCLK --> GPIO 14</br>
+GND --> GND (common ground)
+<br>3V --> 3.3V</br>
+
+<p class = "margin"></p>
+
+
+
+
+
+
+
+<h4><b><u> Coding </b></h4></u>
+
+<p class = "margin"></p>
+
+<img style = "width: 60%"
+ src = "11111.png">
+
+ <p class = "margin"></p>
+
+ <img style = "width: 60%"
+ src = "22222.png">
+
+ <p class = "margin"></p>
+
+ <img style = "width: 60%"
+ src = "33333.png">
+
+<p class = "margin"></p>
+
+I did some research to understand the structure of an MEMS microphone. I found out what specific voltages and pins that has to be used in order for the project to work properly. 
+
+<p class = "margin"></p>
+
+SEL --> GND (I2S mode & common ground)
+<br>LRCL --> GPIO 26</br>
+DOUT --> GPIO 32
+<br>BCLK --> GPIO 14</br>
+GND --> GND (common ground)
+<br>3V --> 3.3V</br>
+
+<p class = "margin"></p>
+
+
+
+
+
+
+<h4><b><u> Results </b></h4></u>
+
+<p class = "margin"></p>
+
+The outputs of the microphone shows up like this with background noise:
+
+<p class = "margin"></p>
+
+<video width="640" height="480" controls>
+  <source src="output1.MOV" type="video/mp4">
+</video>
+
+<p class = "margin"></p>
+
+<video width="640" height="480" controls>
+  <source src="output2.MOV" type="video/mp4">
+</video>
+
+<p class = "margin"></p>
+
+<p class = "margin"></p>
+
+The outputs of the entire:
+
+<p class = "margin"></p>
+
+<video width="640" height="480" controls>
+  <source src="result.MOV" type="video/mp4">
+</video>
+
+<p class = "margin"></p>
+
+
 
 
 </div>
